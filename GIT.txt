@@ -108,5 +108,32 @@ GIT ХРАНИТ НАБОР ИЗМЕНЕНИЙ В ВИДЕ КОМИТОВ
 
 13) Чтобы переместится в ранее созданный главное ЗАФИКСИРОВАННЫЙ комит
  $ git checkout b06598738027eda7e10b08a03709ca189ea68c10
+мы увидим ранее созданный без последних изменений
+
+14) чтобы вернуться к последнему
+$ git reset --hard master
+
+= 
+$ git reset --hard master
+HEAD is now at 4b2068d modified README
+
+ЛИБО:
+$ git checkout master
+=
+$ git log
+commit 4b2068da14d2a40071451a23800eeda6c4e8f23a (HEAD -> master)
+Author: Angelika Stepanova <74lika1984@gmail.com>
+Date:   Tue Sep 27 23:35:08 2022 +0300
+
+    modified README
+
+commit b06598738027eda7e10b08a03709ca189ea68c10
+Author: Angelika Stepanova <74lika1984@gmail.com>
+Date:   Tue Sep 27 23:22:20 2022 +0300
+
+    Firs commit
+
+вернулись на нашу ветку, HEAD теперь последний
+
 
 
